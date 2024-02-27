@@ -1,0 +1,337 @@
+/*Contenido del header*/
+.box--header{
+    display: flex;
+    column-gap: 2.3rem;
+    align-items: center;
+}
+.header--tittle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1944D8;
+}
+.box--header:first-child{
+    margin: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+/*Contenido del main*/
+.box--main{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*contenido del main container*/
+.main--container{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 350px;
+    height: 350px;
+    box-shadow: 50px 3px 60px #00000029;
+    border-radius: 40px;
+    z-index: 1; 
+    
+}
+
+/*Contenido del container texto*/
+.container--texto{
+    color: #979797;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+#icon::before{
+    content: "!";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 10px;
+    margin-right: 0.3rem;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    border-radius: 50%;
+}
+/* contenido del textarea */
+.container--datos{
+    background-color: transparent;
+    color: #2A2E46;
+    height: 30px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    width: 250px;
+    height: 200px;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    margin: 0.8rem 2rem;; 
+}
+.container--datos:focus{
+    border: none;
+    outline: none;
+}
+.container--datos::placeholder{
+    color: #2A2E46;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+/* contenido de los botones */
+.container--buttons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.buttons{
+    border: 1px solid;
+    border-radius: 15px;
+    opacity: 1;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+#btn--one{
+    background-color: #1944D8;
+    color: #DFE0F2;
+    border-color: #707070;
+}
+#btn--two{
+    background-color: #FFFFFF;
+    color: #1944D8;
+    border-color: #1944D8;
+}
+#btn--two:hover{
+    background-color: #CACCE2;
+}
+/* Contenido del main continer two */
+.main--container_two{
+    background: #2A2E46 0% 0% no-repeat padding-box;
+    position: absolute;
+    width: 348px;
+    height: 250px;
+    box-shadow: 20px 0px 60px #00000029;
+    border-radius: 38px;
+    top: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Contenido del texto*/
+.two--texto{
+    color: #DFE0F2;
+    width: 200px;
+    margin-right: 6rem;
+}
+.two--msg{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+}
+.two--parrafo{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0.5rem;
+}
+/*Contenido del two textarea*/
+#two--textarea{
+    background-color: blueviolet;
+    color: #FFFFFF;
+    margin-right: 2rem;
+    width: 260px;
+    height: 90px;
+    border: none;
+    resize: none;
+    outline: none;
+    display: none;
+
+}
+#two--textarea::placeholder{
+    color: #2A2E46;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+/*Contenido del muñeco*/
+.two--img{
+    position: absolute;
+    bottom: -0.5rem;
+    right:  1rem;
+    
+}
+.img--muneco{
+    width: 150px;
+    height: 150px;
+}
+/*contenido del boton copiar*/
+.btn--copy{
+    position: absolute;
+    bottom: 1rem;
+    margin-right: 11rem;
+    display: none;
+    
+}
+.copy{
+    border: 1px solid;
+    border-radius: 15px;
+    width: 110px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #1944D8;
+    border-color: #1944D8;
+}
+.copy:hover{
+    background-color: #CACCE2;
+}
+/*Recordatorio del display none del textarea y el boton copy
+al usar js*/
+/*Contenido responsive para tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    /*header*/
+    .box--header{
+        display: flex;
+        justify-content: center;
+    }
+    .box--header:first-child{
+        margin-right: 12rem;
+        
+    }
+    /*bloque blanco*/
+    .main--container{
+        width: 63vw;
+    }
+    /*Textarea*/
+    .container--datos{
+    width: 52vw;
+    height: 30vh;
+    }
+    /*botones*/
+    .container--buttons{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+    margin: 1rem;
+    }
+    /*Bloque azul*/
+    .main--container_two{
+    width: 62vw;
+
+    }
+    /*texto bloque azul*/
+    .two--texto{
+        margin-right: 15rem;
+        margin-top: 2rem;
+    }
+    .two--msg{
+        font-size: 20px;
+    }
+    .two--parrafo{
+        font-size: 12px;
+    }
+    /*textarea bloque azul*/
+    #two--textarea{
+    margin-right: 2rem;
+    font-size: 20px;
+    width: 55vw;
+    height: 100px;
+    }
+    .btn--copy{
+        margin-right: 22rem;
+    }
+    /*imagen del muñeco*/
+    .two--img{
+        margin-right: 4rem;
+    }
+}
+ /* contenido responsive para pantalla normal */
+@media(min-width: 1024px) and (max-width: 1680px){
+    body{
+        width: 100vw;
+        height: 0;
+    }
+    /*Contenido del header*/
+    .box--header{
+        display: flex;
+        justify-content: start;
+    }
+    .box--header:first-child{
+        margin-left: 5em;
+    }
+    .box--main{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 10em;
+    }
+    /*Contenido del cuadro blanco*/
+    .main--container{
+        width: 35vw;
+        height: 50vh;
+    }
+    /*Textarea*/
+    .container--datos{
+        width: 25vw;
+        height: 30vh;
+    }
+    /*botones*/
+    .container--buttons{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+        margin: 1rem;
+    }
+    /*Contenido del cuadro azul*/
+    .main--container_two{
+        position: relative;
+        top: 1.2em;
+        right: 6em;
+        width: 27vw;
+        height: 45vh;
+    }
+    /*texto bloque azul*/
+    .two--texto{
+        margin-right: -7rem;
+        margin-top: -12rem;
+    }
+    .two--msg{
+        font-size: 20px;
+    }
+    .two--parrafo{
+        font-size: 12px;
+    }
+/*textarea bloque azul*/
+#two--textarea{
+    margin-left: 8rem;
+    font-size: 20px;
+    margin-top: -12rem;
+    width: 17vw;
+    height: 150px;
+    }
+        .btn--copy{
+            margin-right: 2rem;
+            margin-top: 10em;
+        }
+        /*imagen del muñeco*/
+        .two--img{
+            margin-right: 4rem;
+        }
+}

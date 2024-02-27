@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Encriptador</title>
+    <link rel="icon" href="./style/img/a.ico">
+</head>
+<body>
+    <header class="box--header">
+        <img src="./style/img/Grupo 18.png" alt="logo de alura" class="header--img" width="42px" height="62px">
+        <h1 class="header--tittle">Encriptador</h1>
+    </header>
+<main class="box--main">
+    <div class="main--container">
+        <article class="container--texto">
+            <p id="icon">Solo letras minúsculas y sin acentos</p>
+        </article>
+        <textarea class="container--datos" type="text"  required autocomplete="off" placeholder="Ingrese texto aquí" rows="15" cols="15"></textarea>
+        <div class="container--buttons">
+        <button class="buttons" id="btn--one">Encriptar</button>
+        <button class="buttons" id="btn--two">Desencriptar</button>
+        </div>
+    </div>
+    <div class="main--container_two">
+        <article class="two--texto">
+            <h2 class="two--msg">Ningún mensaje fue encontrado​</h2>
+            <p class="two--parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+        </article>
+        <textarea id="two--textarea"  cols="20" rows="10" readonly="readonly"></textarea>
+        <figure class="two--img">
+            <img src="./style/img/muñecoconlupa.png" alt="muñecoconlupa" class="img--muneco" width="200px" height="200px">
+        </figure>
+        <div class="btn--copy">
+            <button class="copy">Copiar</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
